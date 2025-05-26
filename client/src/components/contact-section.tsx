@@ -59,23 +59,16 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "alex.johnson@example.com",
+      value: "corporatevaibhav24@gmail.com",
       bgColor: "bg-primary/10",
       iconColor: "text-primary"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "8010416933",
       bgColor: "bg-green-100",
       iconColor: "text-green-500"
-    },
-    {
-      icon: <MapPin className="h-5 w-5" />,
-      label: "Location",
-      value: "San Francisco, CA",
-      bgColor: "bg-purple-100",
-      iconColor: "text-purple-600"
     }
   ];
 
@@ -85,24 +78,6 @@ export default function ContactSection() {
       href: "https://linkedin.com",
       bgColor: "bg-blue-600 hover:bg-blue-700",
       label: "LinkedIn"
-    },
-    {
-      icon: <Github className="h-5 w-5" />,
-      href: "https://github.com",
-      bgColor: "bg-gray-800 hover:bg-gray-900",
-      label: "GitHub"
-    },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      href: "https://twitter.com",
-      bgColor: "bg-blue-400 hover:bg-blue-500",
-      label: "Twitter"
-    },
-    {
-      icon: <Mail className="h-5 w-5" />,
-      href: "mailto:alex.johnson@example.com",
-      bgColor: "bg-red-600 hover:bg-red-700",
-      label: "Email"
     }
   ];
 

@@ -6,40 +6,35 @@ export default function SkillsSection() {
     {
       title: "Testing Frameworks",
       skills: [
-        { name: "Selenium WebDriver", level: 95 },
-        { name: "Cypress", level: 90 },
-        { name: "Playwright", level: 85 },
-        { name: "TestNG", level: 88 }
+        "Selenium WebDriver",
+        "Cypress",
+        "Playwright"
       ],
       color: "bg-primary"
     },
     {
       title: "Programming",
       skills: [
-        { name: "Java", level: 92 },
-        { name: "Python", level: 88 },
-        { name: "JavaScript", level: 85 },
-        { name: "TypeScript", level: 80 }
+        "Java",
+        "Python"
       ],
       color: "bg-green-500"
     },
     {
       title: "Tools & Platforms",
       skills: [
-        { name: "Jenkins", level: 90 },
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 82 },
-        { name: "Git", level: 95 }
+        "Jenkins",
+        "Docker",
+        "Git"
       ],
       color: "bg-purple-600"
     },
     {
       title: "Methodologies",
       skills: [
-        { name: "Agile/Scrum", level: 95 },
-        { name: "TDD/BDD", level: 88 },
-        { name: "CI/CD", level: 90 },
-        { name: "API Testing", level: 92 }
+        "Agile/Scrum",
+        "CI/CD",
+        "API Testing"
       ],
       color: "bg-orange-500"
     }
@@ -61,17 +56,11 @@ export default function SkillsSection() {
               <CardHeader className="pb-4">
                 <CardTitle className="text-lg font-semibold text-gray-900">{category.title}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-2">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-gray-700">{skill.name}</span>
-                      <span className="text-gray-500">{skill.level}%</span>
-                    </div>
-                    <Progress
-                      value={skill.level}
-                      className="h-2"
-                    />
+                  <div key={skillIndex} className="flex items-center space-x-3">
+                    <div className={`w-2 h-2 ${category.color} rounded-full`}></div>
+                    <span className="text-gray-700 text-sm font-medium">{skill}</span>
                   </div>
                 ))}
               </CardContent>

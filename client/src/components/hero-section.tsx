@@ -29,7 +29,7 @@ export default function HeroSection() {
               <span className="block text-primary">Building Quality at Scale</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Passionate about creating robust test automation frameworks and ensuring software quality through innovative testing strategies. Currently at Insurity developing AI-powered failure analysis systems and insurance workflow automation with 3+ years of comprehensive automation testing experience.
+              Passionate about creating robust test automation frameworks and ensuring software quality through innovative testing strategies. Currently at Insurity as SDET developing AI-powered failure analysis systems and insurance workflow automation with 3 years of comprehensive automation testing experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
