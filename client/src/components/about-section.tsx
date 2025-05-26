@@ -5,22 +5,22 @@ export default function AboutSection() {
   const highlights = [
     {
       icon: <Code className="h-6 w-6" />,
-      title: "Technical Expertise",
-      description: "Proficient in multiple testing frameworks including Selenium, Cypress, and TestNG. Experienced with CI/CD pipelines and cloud testing platforms.",
+      title: "Advanced Automation",
+      description: "Expert in Selenium with Java, TestNG, and Cypress. Specialized in insurance workflow automation including policy creation, claims processing, and renewal workflows.",
       gradient: "from-blue-50 to-indigo-50",
       iconBg: "bg-primary"
     },
     {
       icon: <TrendingUp className="h-6 w-6" />,
-      title: "Results Driven",
-      description: "Consistently delivered 40% reduction in testing time and 95% test coverage across multiple enterprise projects.",
+      title: "AI-Powered Testing",
+      description: "Developed intelligent failure analysis systems with automatic log parsing and classification. Implemented smart test reliability features reducing cascading failures.",
       gradient: "from-green-50 to-emerald-50",
       iconBg: "bg-green-500"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Team Leadership",
-      description: "Led cross-functional teams and mentored junior testers while implementing best practices for quality assurance.",
+      title: "Innovation Focus",
+      description: "Built automatic rerun logic for flaky tests and intelligent failure classification systems for environment issues, locator failures, and service timeouts.",
       gradient: "from-purple-50 to-violet-50",
       iconBg: "bg-purple-600"
     }

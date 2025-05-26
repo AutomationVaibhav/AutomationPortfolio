@@ -3,6 +3,24 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function JourneySection() {
   const timelineItems = [
     {
+      period: "Feb 2025 - Present",
+      title: "Automation Test Engineer",
+      company: "Insurity",
+      achievements: [
+        "Designed and developed automated test cases for complex insurance workflows",
+        "Automated key user journeys including quote generation, policy creation, endorsements, renewals, and claims processing",
+        "Built robust test scripts using Selenium with Java following Page Object Model architecture",
+        "Implemented automatic rerun logic for flaky tests improving overall test reliability",
+        "Added support for automatic subsequent scenario failure skipping, reducing cascading failure noise",
+        "Integrated AI-based failure analysis with lightweight log parsing module",
+        "Built intelligent failure classification system for environment issues, locator failures, and service timeouts",
+        "Performed comprehensive end-to-end UI testing ensuring seamless user experience"
+      ],
+      color: "border-green-500",
+      dotColor: "bg-green-500",
+      position: "right"
+    },
+    {
       period: "July 2022 - Feb 2025",
       title: "Automation Test Engineer",
       company: "GlobalLogic",
@@ -18,7 +36,7 @@ export default function JourneySection() {
       ],
       color: "border-primary",
       dotColor: "bg-primary",
-      position: "right"
+      position: "left"
     }
   ];
 
