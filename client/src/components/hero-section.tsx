@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-  const scrollToProjects = () => {
-    const element = document.getElementById("projects");
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -33,10 +33,10 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={scrollToProjects}
+                onClick={scrollToContact}
                 className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
               >
-                View My Work
+                Get In Touch
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button

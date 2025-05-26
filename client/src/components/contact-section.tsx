@@ -91,14 +91,14 @@ export default function ContactSection() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Get In Touch</h3>
-              <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Get In Touch</h3>
+              <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center">
+                  <div key={index} className="flex items-center justify-center">
                     <div className={`w-12 h-12 ${info.bgColor} rounded-lg flex items-center justify-center mr-4`}>
                       <div className={info.iconColor}>
                         {info.icon}
@@ -114,9 +114,9 @@ export default function ContactSection() {
             </div>
             
             {/* Social Links */}
-            <div>
+            <div className="text-center">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Connect With Me</h4>
-              <div className="flex space-x-4">
+              <div className="flex justify-center">
                 {socialLinks.map((link, index) => (
                   <Button
                     key={index}
@@ -132,104 +132,6 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          
-          {/* Contact Form */}
-          <Card className="bg-gray-50 border-0">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div>
-                    <Label htmlFor="firstName" className="text-sm font-medium text-gray-700">
-                      First Name
-                    </Label>
-                    <Input
-                      id="firstName"
-                      name="firstName"
-                      type="text"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      className="mt-2"
-                      placeholder="John"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="lastName" className="text-sm font-medium text-gray-700">
-                      Last Name
-                    </Label>
-                    <Input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      className="mt-2"
-                      placeholder="Doe"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <Label htmlFor="email" className="text-sm font-medium text-gray-700">
-                    Email Address
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="mt-2"
-                    placeholder="john.doe@company.com"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="subject" className="text-sm font-medium text-gray-700">
-                    Subject
-                  </Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className="mt-2"
-                    placeholder="Automation Testing Opportunity"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="message" className="text-sm font-medium text-gray-700">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    className="mt-2"
-                    rows={4}
-                    placeholder="I'd like to discuss..."
-                    required
-                  />
-                </div>
-                
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-primary text-white hover:bg-blue-700 transition-colors duration-200"
-                >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                  <Send className="ml-2 h-4 w-4" />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
