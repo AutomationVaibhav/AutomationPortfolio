@@ -3,56 +3,22 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function JourneySection() {
   const timelineItems = [
     {
-      period: "2022 - Present",
-      title: "Senior Automation Test Engineer",
-      company: "TechCorp Solutions",
+      period: "July 2022 - Feb 2025",
+      title: "Automation Test Engineer",
+      company: "GlobalLogic",
       achievements: [
-        "Led automation strategy for 3 major product lines",
-        "Implemented CI/CD pipelines reducing release time by 60%",
-        "Mentored team of 5 junior automation engineers"
+        "Developed and maintained automated test scripts using Selenium, TestNG, and Cypress",
+        "Applied Page Object Model structure for reusable and organized code architecture",
+        "Executed test suites through Jenkins CI/CD and analyzed failures with detailed reporting",
+        "Conducted comprehensive regression testing ensuring core feature stability",
+        "Converted manual test cases into automated scripts improving testing efficiency",
+        "Contributed to framework enhancements with utility functions and features",
+        "Maintained test execution reports and provided status updates during daily stand-ups",
+        "Reported bugs with clear logs and screenshots in PPM for efficient resolution"
       ],
       color: "border-primary",
       dotColor: "bg-primary",
       position: "right"
-    },
-    {
-      period: "2020 - 2022",
-      title: "Automation Test Engineer",
-      company: "InnovateIT Inc.",
-      achievements: [
-        "Developed comprehensive test automation framework",
-        "Achieved 95% test coverage for web applications",
-        "Integrated automated testing with Jenkins CI/CD"
-      ],
-      color: "border-green-500",
-      dotColor: "bg-green-500",
-      position: "left"
-    },
-    {
-      period: "2019 - 2020",
-      title: "QA Engineer",
-      company: "StartupXYZ",
-      achievements: [
-        "Transitioned from manual to automation testing",
-        "Created test cases and documentation standards",
-        "Collaborated with dev team on testing best practices"
-      ],
-      color: "border-purple-600",
-      dotColor: "bg-purple-600",
-      position: "right"
-    },
-    {
-      period: "2018 - 2019",
-      title: "Junior QA Analyst",
-      company: "Digital Solutions Ltd.",
-      achievements: [
-        "Performed manual testing for web applications",
-        "Learned automation testing fundamentals",
-        "Participated in agile development processes"
-      ],
-      color: "border-orange-500",
-      dotColor: "bg-orange-500",
-      position: "left"
     }
   ];
 

@@ -29,7 +29,7 @@ export default function HeroSection() {
               <span className="block text-primary">Building Quality at Scale</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Passionate about creating robust test automation frameworks and ensuring software quality through innovative testing strategies. 5+ years of experience in enterprise-level automation testing.
+              Passionate about creating robust test automation frameworks and ensuring software quality through innovative testing strategies. 2.5+ years of experience at GlobalLogic developing automated test scripts and CI/CD integration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
