@@ -12,7 +12,7 @@ export default function HeroSection() {
   const handleDownloadResume = () => {
     // Create a link to download resume
     const link = document.createElement("a");
-    link.href = "/Vaibhav_Bhatt_Resume2025.docx"; // Correct path to the resume in the public folder
+    link.href = "/AutomationPortfolio/Vaibhav_Bhatt_Resume2025.docx"; // Correct path for GitHub Pages subpath
     link.download = "Vaibhav_Bhatt_Resume2025.docx"; // Suggested filename for download
     document.body.appendChild(link);
     link.click();
