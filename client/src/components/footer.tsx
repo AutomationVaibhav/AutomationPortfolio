@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Vaibhav Bhatt</h3>
             <p className="text-gray-300 mb-4">
-              Automation Test Engineer passionate about building quality software through innovative testing strategies and frameworks.
+              An SDET passionate about building quality software through innovative testing strategies and frameworks.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (

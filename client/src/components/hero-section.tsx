@@ -53,7 +53,7 @@ export default function HeroSection() {
             <div className="relative">
               <img
                 src="https://automatenow.io/wp-content/uploads/2024/01/jenkins-test-automation.webp"
-                alt="Vaibhav Bhatt - Automation Test Engineer"
+                alt="Vaibhav Bhatt - Software Development Engineer In Test"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
               <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-xl shadow-lg animate-float">

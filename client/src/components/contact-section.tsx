@@ -90,46 +90,41 @@ export default function ContactSection() {
             Let's connect to explore automation testing opportunities and discuss quality assurance solutions
           </p>
         </div>
-        
-        <div className="max-w-2xl mx-auto">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Get In Touch</h3>
-              <div className="space-y-6">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center justify-center">
-                    <div className={`w-12 h-12 ${info.bgColor} rounded-lg flex items-center justify-center mr-4`}>
-                      <div className={info.iconColor}>
-                        {info.icon}
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">{info.value}</p>
-                      <p className="text-sm text-gray-600">{info.label}</p>
-                    </div>
-                  </div>
-                ))}
+        <div className="max-w-xl mx-auto bg-gray-50 rounded-2xl shadow-lg p-8">
+          <h3 className="text-xl font-semibold text-gray-900 mb-8 text-center">Get In Touch</h3>
+          <div className="flex flex-col gap-6 mb-8">
+            {contactInfo.map((info, index) => (
+              <div key={index} className="flex items-center justify-center gap-4">
+                <div className={`w-12 h-12 ${info.bgColor} rounded-xl flex items-center justify-center shadow`}>
+                  <div className={info.iconColor}>{info.icon}</div>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900 text-lg">{info.value}</p>
+                  <p className="text-sm text-gray-600">{info.label}</p>
+                </div>
               </div>
-            </div>
-            
-            {/* Social Links */}
-            <div className="text-center">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Connect With Me</h4>
-              <div className="flex justify-center">
-                {socialLinks.map((link, index) => (
-                  <Button
-                    key={index}
-                    size="sm"
-                    asChild
-                    className={`w-12 h-12 text-white rounded-lg transition-colors duration-200 ${link.bgColor}`}
-                  >
-                    <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
-                      {link.icon}
-                    </a>
-                  </Button>
-                ))}
-              </div>
+            ))}
+          </div>
+          <div className="flex items-center my-8">
+            <div className="flex-grow border-t border-gray-200"></div>
+            <span className="mx-4 text-gray-400">or</span>
+            <div className="flex-grow border-t border-gray-200"></div>
+          </div>
+          <div className="text-center">
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">Connect With Me</h4>
+            <div className="flex justify-center gap-4">
+              {socialLinks.map((link, index) => (
+                <Button
+                  key={index}
+                  size="icon"
+                  asChild
+                  className={`w-14 h-14 text-white rounded-full shadow-lg transition-transform duration-200 hover:scale-110 ${link.bgColor}`}
+                >
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                    {link.icon}
+                  </a>
+                </Button>
+              ))}
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Dedicated automation test engineer with a passion for quality assurance and continuous improvement in software development processes.
+            Dedicated SDET with a passion for quality assurance and continuous improvement in software development processes.
           </p>
         </div>
         
