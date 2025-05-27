@@ -25,7 +25,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Automation Test Engineer
+              Software Development Engineer In Test
               <span className="block text-primary">Building Quality at Scale</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
