@@ -87,7 +87,7 @@ export default function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
           <p className="text-lg text-gray-600">
-            Let's connect to explore automation testing opportunities and discuss quality assurance solutions
+          If you find my profile suitable, I’d love to connect and discuss automation testing opportunities
           </p>
         </div>
         <div className="max-w-xl mx-auto bg-gray-50 rounded-2xl shadow-lg p-8">
