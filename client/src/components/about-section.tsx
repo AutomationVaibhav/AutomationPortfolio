@@ -5,8 +5,8 @@ export default function AboutSection() {
   const highlights = [
     {
       icon: <Code className="h-6 w-6" />,
-      title: "Advanced Automation",
-      description: "Expert in Selenium with Java, TestNG, and Cypress. Specialized in insurance workflow automation including policy creation, claims processing, and renewal workflows.",
+      title: "Web-UI Automation",
+      description: "Selenium with Java,Playwright and Cypress. Specialized in insurance workflow automation including policy creation, Endorsements, and renewal workflows.",
       gradient: "from-blue-50 to-indigo-50",
       iconBg: "bg-primary"
     },

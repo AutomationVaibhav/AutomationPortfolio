@@ -16,8 +16,8 @@ export default function Navigation() {
       let current = "home";
       
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
+        const sectionTop = (section as HTMLElement).offsetTop;
+        const sectionHeight = (section as HTMLElement).clientHeight;
         if (window.scrollY >= sectionTop - 200) {
           current = section.getAttribute("id") || "home";
         }
@@ -61,7 +61,7 @@ export default function Navigation() {
               onClick={() => scrollToSection("home")}
               className="text-xl font-bold text-primary hover:text-blue-700 transition-colors"
             >
-              Alex Johnson
+              Vaibhav Bhatt
             </button>
           </div>
 

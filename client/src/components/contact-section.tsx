@@ -75,7 +75,7 @@ export default function ContactSection() {
   const socialLinks = [
     {
       icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/vaibhav-bhatt-b361001a5/",
       bgColor: "bg-blue-600 hover:bg-blue-700",
       label: "LinkedIn"
     }

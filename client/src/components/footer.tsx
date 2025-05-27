@@ -5,22 +5,19 @@ export default function Footer() {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Journey", href: "#journey" },
-    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
 
   const specializations = [
-    "Test Automation Frameworks",
-    "CI/CD Pipeline Integration",
-    "API Testing & Validation",
-    "Performance Testing",
-    "Mobile App Testing",
+    "Test Automation",
+    "CI/CD Pipeline",
+    "API Testing",
   ];
 
   const socialLinks = [
     {
       icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/vaibhav-bhatt-b361001a5/",
       label: "LinkedIn"
     },
     {
@@ -47,7 +44,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Alex Johnson</h3>
+            <h3 className="text-xl font-bold mb-4">Vaibhav Bhatt</h3>
             <p className="text-gray-300 mb-4">
               Automation Test Engineer passionate about building quality software through innovative testing strategies and frameworks.
             </p>
@@ -97,7 +94,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 Alex Johnson. Built with passion for quality assurance. Hosted on GitHub Pages.
+            © 2025 Vaibhav Bhatt | SDET
           </p>
         </div>
       </div>

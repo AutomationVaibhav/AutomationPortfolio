@@ -53,7 +53,7 @@ export default function HeroSection() {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=600"
-                alt="Alex Johnson - Automation Test Engineer"
+                alt="Vaibhav Bhatt - Automation Test Engineer"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
               <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-xl shadow-lg animate-float">
