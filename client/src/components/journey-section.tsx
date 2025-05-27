@@ -59,7 +59,10 @@ export default function JourneySection() {
           {/* Timeline items */}
           <div className="space-y-12">
             {timelineItems.map((item, index) => (
-              <div key={index} className="relative flex flex-col md:flex-row items-center md:items-stretch">
+              <div
+                key={index}
+                className={`relative flex flex-col items-center md:items-stretch md:w-full ${item.position === "right" ? "md:flex-row" : "md:flex-row-reverse"}`}
+              >
                 {/* Dot */}
                 <div
                   className={`absolute md:static left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 ${item.dotColor} rounded-full border-4 border-white shadow z-10`}
@@ -67,7 +70,7 @@ export default function JourneySection() {
                 ></div>
                 {/* Card */}
                 <div
-                  className={`mt-6 md:mt-0 w-full md:w-1/2 ${item.position === "right" ? "md:pr-8 md:order-1 md:text-right" : "md:pl-8 md:order-2"}`}
+                  className={`mt-6 md:mt-0 w-full md:w-1/2 ${item.position === "right" ? "md:pr-8 md:text-right" : "md:pl-8 md:text-left"}`}
                 >
                   <Card className={`bg-white shadow-sm border-l-4 ${item.color} md:border-l-4`}>
                     <CardContent className="p-6">
@@ -82,8 +85,6 @@ export default function JourneySection() {
                     </CardContent>
                   </Card>
                 </div>
-                {/* Spacer for desktop layout */}
-                <div className="hidden md:block w-1/2"></div>
               </div>
             ))}
           </div>
