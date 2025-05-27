@@ -52,7 +52,7 @@ export default function HeroSection() {
           <div className="relative animate-fade-in">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=600"
+                src="https://automatenow.io/wp-content/uploads/2024/01/jenkins-test-automation.webp"
                 alt="Vaibhav Bhatt - Automation Test Engineer"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
