@@ -12,7 +12,7 @@ export default function HeroSection() {
   const handleDownloadResume = () => {
     // Create a link to download resume
     const link = document.createElement("a");
-    link.href = "https://docs.google.com/document/d/1B7wIDeMsqh0TQ40KOFb_E3UMYGzqbwQ3/edit?usp=sharing&ouid=107845821450774738383&rtpof=true&sd=true"; // Google Drive shareable link
+    link.href = "https://docs.google.com/document/d/1ShWHhaNwGef41wbrV3ScQQUfubJF6Sv9/edit?usp=sharing&ouid=107845821450774738383&rtpof=true&sd=true"; // Google Drive shareable link
     link.download = "Vaibhav_Bhatt_Resume2025.docx"; // Suggested filename for download
     document.body.appendChild(link);
     link.click();
