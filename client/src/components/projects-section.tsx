@@ -13,7 +13,6 @@ export default function ProjectsSection() {
       icon: <BarChart3 className="h-4 w-4" />,
       links: [
         { icon: <Github className="h-4 w-4" />, href: "https://github.com/AutomationVaibhav/AutomationBDD", label: "GitHub" },
-        { icon: <ExternalLink className="h-4 w-4" />, href: "#", label: "Live Demo" }
       ]
     },
     // {
@@ -82,53 +81,41 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Projects</h2>
           <p className="text-lg text-gray-600">
-            Showcasing automation testing frameworks and quality assurance solutions
+            Showcasing Automation Testing Frameworks and Quality Assurance Solutions
           </p>
         </div>
-        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
-                  <div className="flex space-x-2">
+            <Card key={index} className="bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col justify-between">
+              <CardContent className="p-6 flex flex-col h-full">
+                <div className="mb-3">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
+                  <div className="flex flex-wrap gap-2 mb-3">
                     {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="text-xs">
+                      <Badge key={tagIndex} variant="secondary" className="text-xs whitespace-nowrap">
                         {tag}
                       </Badge>
                     ))}
                   </div>
+                  <p className="text-gray-600 text-sm mb-4">{project.description}</p>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-sm text-gray-500">
-                    {project.icon}
-                  </div>
-                  <div className="flex space-x-2">
-                    {project.links.map((link, linkIndex) => (
-                      <Button
-                        key={linkIndex}
-                        variant="ghost"
-                        size="sm"
-                        asChild
-                        className="text-primary hover:text-blue-700 p-2"
-                      >
-                        <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
-                          {link.icon}
-                        </a>
-                      </Button>
-                    ))}
-                  </div>
+                <div className="flex items-center justify-end mt-auto">
+                  {project.links.filter(link => link.label === "GitHub").map((link, linkIndex) => (
+                    <Button
+                      key={linkIndex}
+                      variant="ghost"
+                      size="sm"
+                      asChild
+                      className="text-primary hover:text-blue-700 p-2"
+                    >
+                      <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                        {link.icon}
+                        <span className="ml-1">GitHub</span>
+                      </a>
+                    </Button>
+                  ))}
                 </div>
               </CardContent>
             </Card>
