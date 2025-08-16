@@ -96,7 +96,7 @@ export default function ProjectsSection() {
             Showcasing Automation Testing Frameworks and Quality Assurance Solutions
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {projects.map((project, index) => (
             <Card key={index} className="bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col justify-between">
               <CardContent className="p-6 flex flex-col h-full">
