@@ -15,6 +15,16 @@ export default function ProjectsSection() {
         { icon: <Github className="h-4 w-4" />, href: "https://github.com/AutomationVaibhav/AutomationBDD", label: "GitHub" },
       ]
     },
+    {
+      title: "Rest Assured API Automation Framework",
+      description: "This is a test automation framework for REST APIs built using Rest Assured, Java, TestNG, and Maven. Features include: REST API Testing (automates testing of RESTful web services), TestNG for test management and execution, Maven for project and dependency management, detailed test reporting, and comprehensive logging for debugging.",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      tags: ["Rest Assured", "Java", "TestNG", "Maven", "API","Github Actions"],
+      icon: <ServerCog className="h-4 w-4" />, // Using ServerCog as a suitable icon
+      links: [
+        { icon: <Github className="h-4 w-4" />, href: "https://github.com/AutomationVaibhav/API-Automation", label: "GitHub" }
+      ]
+    },
     // {
     //   title: "REST API Testing Suite",
     //   description: "Automated API testing suite with comprehensive validation for REST endpoints, including authentication, data validation, and performance testing.",
